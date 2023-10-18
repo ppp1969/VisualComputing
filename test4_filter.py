@@ -9,6 +9,8 @@ img_blur = cv.blur(img_rgb,(3,3))
 
 # https://numpy.org/doc/stable/reference/generated/numpy.array.html
 # 얘는 총합이 0인 디테일 필터. 총합이 1이면 원본과 비슷.
+
+# mat 함수는 배열로 만들어주는 함수.
 kernel = np.array(np.mat('-1.0,-1.0,-1.0;-1.0,8.0,-1.0;-1.0,-1.0,-1.0'))
 kernel_new = kernel / 9.0
 
