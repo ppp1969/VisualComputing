@@ -17,7 +17,7 @@ img = np.array([[3, 106, 107, 40, 148, 112, 254, 151],
 
 # 2x2씩 묶임.
 
-# Area가 어떻게 축소되는 지 보여줌.
+# Area 보간법이 어떻게 축소되는 지 보여줌.
 resized = cv.resize(img, (int(img.shape[1]/2), int(img.shape[0]/2)), 0, 0,
                      interpolation=cv.INTER_AREA)
 print(resized)
