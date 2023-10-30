@@ -96,3 +96,6 @@ plot_img(plt_rc, 2, LP_halfNhalf, "half")
 # plot_img(plt_rc, 2 , generate_pyramid_composition_image(LP_apple), "LP_apple")
 # plot_img(plt_rc, 4 , generate_pyramid_composition_image(LP_orange), "LP_orange")
 plt.show()
+
+# 마지막 결과가 팅트가 된듯한 결과 : 뿌얘~~~ 교수님이 말한건 대비가 좀 작아진거 같다 ㅋ 
+# -> HE 적용 하면 되겠지.
