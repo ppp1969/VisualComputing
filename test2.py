@@ -2,7 +2,7 @@ import cv2 as cv
 from matplotlib import pyplot as plt
 
 # openCV는 bgr순으로 넘파이 배열에 저장한다.
-img = cv.imread("VisualComputing/home.jpg")
+img = cv.imread("home.jpg")
 # pyplot을 사용한다면, 역순으로 읽어야 rgb값이 정상적으로 매칭된다.
 
 print(img.shape)
