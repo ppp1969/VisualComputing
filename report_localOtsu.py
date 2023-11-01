@@ -89,7 +89,7 @@ def localOtsu1(image, maxval, n, C = 0):
     return result
 
 
-img_gray = cv.imread("VisualComputing/japan.jpg", cv.IMREAD_GRAYSCALE)
+img_gray = cv.imread("japan.jpg", cv.IMREAD_GRAYSCALE)
 
 # Adaptive_Mean
 img_th1 = cv.adaptiveThreshold(img_gray, 255, cv.ADAPTIVE_THRESH_MEAN_C,

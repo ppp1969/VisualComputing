@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # https://docs.opencv.org/4.8.0/da/d54/group__imgproc__transform.html
-img_original = cv.imread("VisualComputing/image2.jpg")
+img_original = cv.imread("image2.jpg")
 img_original = cv.cvtColor(img_original, cv.COLOR_BGR2RGB)
 
 # 리사이즈 과정

@@ -36,10 +36,12 @@ size = (img_original.shape[:2])[::-1]
 rescale_size = tuple([int(x * 0.3) for x in size])
 #print (rescale_size)
 
-# high frequency 이미지의 경우 Bad Sampling이 생기기 쉽다. 기존의 패턴을 잃어버림.
+# high frequency 이미지의 경우 Bad Sampling이 생기기 쉽다. (기존의 패턴을 잃어버림.)
 # Linear은 양옆에 하나씩 가져와서 그걸 이어줌 -> 스트라이프 패턴은 망한다!!!
 # Area는 양옆의 샘플 100개씩 가져와서 그 평균을 사용.
 # 대부분은 선형을 쓰지만, 축소 및 하이프리퀀시 이미지는 Area를 사용해라~
+# 주변 값의 전부를 가져와 쓰기에 -> 하이프리퀀시값도 평균 값으로 들어가 그나마 괜찮다.
+
 # 이미지를 3배 키운다고 가정했을 때, Area는 Nearest와 같다.(빵꾸가 있으니까)
 img_resize = cv.resize(img_original, rescale_size, img_tmp, 0, 0, cv.INTER_LINEAR)
 img_resize2 = cv.resize(img_original, rescale_size, img_tmp, 0, 0, cv.INTER_AREA)

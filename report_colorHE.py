@@ -2,7 +2,7 @@ import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
 
-img = cv.imread('VisualComputing/tree.jpg')
+img = cv.imread('tree.jpg')
 
 print(img.shape)
 

@@ -37,7 +37,7 @@ def localOtsu2(image, maxval, block_size_pixel = 10, C = 0):
 
     return result
 
-img_gray = cv.imread("VisualComputing/japan.jpg", cv.IMREAD_GRAYSCALE)
+img_gray = cv.imread("japan.jpg", cv.IMREAD_GRAYSCALE)
 # Adaptive_Mean
 img_th1 = cv.adaptiveThreshold(img_gray, 255, cv.ADAPTIVE_THRESH_MEAN_C,
                                     cv.THRESH_BINARY, 11, 2)
